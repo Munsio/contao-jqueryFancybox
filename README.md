@@ -6,7 +6,7 @@ Adds jquery Fancybox to Contao 3.1
 This one is tested for Contao 3.1
 
 
-About fanyBox
+About fancyBox
 =============
 
 Github: https://github.com/fancyapps/fancyBox
