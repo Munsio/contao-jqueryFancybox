@@ -6,6 +6,13 @@ Adds jquery Fancybox to Contao 3.1
 This one is tested for Contao 3.1
 
 
-The Copyright of the fancybox source code belongs to:
-J?nis Skarnelis
-https://github.com/fancyapps/fancyBox
+About fanyBox
+=============
+
+Github: https://github.com/fancyapps/fancyBox
+
+More information and examples: http://www.fancyapps.com/fancybox/
+
+License: http://www.fancyapps.com/fancybox/#license
+
+Copyright (c) 2012 Janis Skarnelis - janis@fancyapps.com
