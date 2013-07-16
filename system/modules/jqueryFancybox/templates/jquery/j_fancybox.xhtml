@@ -1,0 +1,32 @@
+<?php
+
+// Add the colorbox style sheet
+$GLOBALS['TL_CSS'][] = 'assets/jquery/fancybox/'. FANCYBOX .'/jquery.fancybox.css||static';
+
+?>
+
+<script src="<?php echo TL_ASSETS_URL; ?>assets/jquery/fancybox/<?php echo FANCYBOX; ?>/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="<?php echo TL_ASSETS_URL; ?>assets/jquery/fancybox/<?php echo FANCYBOX; ?>/jquery.fancybox.pack.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+//      $('a[data-lightbox]').map(function() {
+//        $(this).fancybox({
+//          // Put custom options here
+////          loop: false,
+//          rel: $(this).attr('data-lightbox'),
+//          maxWidth: '95%',
+//          maxHeight: '95%'
+//        });
+//      });
+
+        $('a[data-lightbox]').each(function(index, value){
+            $(this).addClass('fancybox');
+            $(this).attr('rel', 'gallery_'+$(this).attr('data-lightbox'));
+        });
+
+        $('a.fancybox').fancybox();
+
+    });
+  })(jQuery);
+</script>
