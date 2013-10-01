@@ -21,6 +21,14 @@ $GLOBALS['TL_CSS'][] = 'assets/jquery/fancybox/'. FANCYBOX .'/jquery.fancybox.cs
         // initialize fancybox on each link tag with class fancybox
         $('a.fancybox').fancybox();
 
+        /**
+         * Using an custom fallback to enable fancybox calls defined in an script file in the head
+         * as example: if u use fancybox to open an login window and you would reopening it after an error occured
+         */
+        if(typeof fancyboxOnLoadCallback !== 'undefined' && $.isFunction(fancyboxOnLoadCallback)){
+            fancyboxOnLoadCallback();
+        }
+
     });
   })(jQuery);
 </script>
