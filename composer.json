@@ -1,47 +1,51 @@
+
 {
-        "name":"mrtool/contao-jquery-fancybox",
-        "description":"Jquery Fancybox for Contao 3.x",
-        "keywords":["jquery","fancybox","contao"],
-        "type":"contao-module",
-        "homepage":"http://www.r2pi.de",
-        "license":[
-            "LGPL-3.0+",
-            "CC-BY-NC-3.0"
-        ],
-        "authors":[
-                {
-                        "name":"Martin Treml",
-                        "homepage":"http://www.r2pi.de",
-                        "role":"Developer - Wrapper"
-                },
-                {
-                        "name":"Janis Skarnelis",
-                        "homepage":"http://www.fancyapps.com",
-                        "role":"Developer - Fancybox"
-                }
-        ],
-        "support":{
-                "issues":"https://github.com/MrTool/contao-jqueryFancybox/issues",
-                "irc":"irc://irc.freenode.org/contao.dev",
-                "source":"https://github.com/MrTool/contao-jqueryFancybox",
-                "forum":"https://community.contao.org/de/forumdisplay.php?119-Sonstige-Erweiterungen"
+    "name": "mrtool/contao-jqueryFancybox",
+    "description": "Jquery Fancybox for Contao 3.x",
+    "keywords": ["jquery", "fancybox", "contao"],
+    "type": "contao-module",
+    "homepage": "http://www.r2pi.de",
+    "license": [
+        "LGPL-3.0+",
+        "CC-BY-NC-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Martin Treml",
+            "homepage": "http://www.r2pi.de",
+            "role": "Developer - Wrapper"
         },
-        "require":{
-                "php":">=5.3",
-                "contao/core":">=3,<4",
-                "contao-community-alliance/composer-installer":"*"
-        },
-        "autoload":{
-                "classmap":[""]
-        },
-        "replace":{
-                "contao-legacy/fancybox":"*"
-        },
-        "extra":{
-                "contao":{
-                        "sources":{
-                                "":"system/modules/jqueryFancybox"
-                        }
-                }
+        {
+            "name": "Janis Skarnelis",
+            "homepage": "http://www.fancyapps.com",
+            "role": "Developer - Fancybox"
         }
+    ],
+    "support": {
+        "issues": "https://github.com/MrTool/contao-jqueryFancybox/issues",
+        "irc": "irc://irc.freenode.org/contao.dev",
+        "source": "https://github.com/MrTool/contao-jqueryFancybox",
+        "forum": "https://community.contao.org/de/forumdisplay.php?119-Sonstige-Erweiterungen"
+    },
+    "require": {
+        "php": ">=5.3",
+        "contao/core": ">=3,<4",
+        "contao-community-alliance/composer-installer": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "MrTool\\fancyBox": "src/"
+        }
+    },
+    "replace": {
+        "contao-legacy/fancybox": "*"
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "assets": "assets",
+                "contao": "system/modules/jqueryFancybox"
+            }
+        }
+    }
 }

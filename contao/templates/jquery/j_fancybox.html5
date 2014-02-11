@@ -1,0 +1,34 @@
+<?php
+
+// Add the fancybox style sheet
+$GLOBALS['TL_CSS'][] = 'assets/jquery/fancybox/'. FANCYBOX .'/jquery.fancybox.css||static';
+
+
+// Add needed javascript
+?>
+<script src="<?php echo TL_ASSETS_URL; ?>assets/jquery/fancybox/<?php echo FANCYBOX; ?>/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="<?php echo TL_ASSETS_URL; ?>assets/jquery/fancybox/<?php echo FANCYBOX; ?>/jquery.fancybox.pack.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+        
+        // crawl each link and build an fancyBox like link
+        $('a[data-lightbox]').each(function(index, value){
+            $(this).addClass('fancybox');
+            $(this).attr('rel', 'gallery_'+$(this).attr('data-lightbox'));
+        });
+        
+        // initialize fancybox on each link tag with class fancybox
+        $('a.fancybox').fancybox();
+        
+        /**
+         * Using an custom fallback to enable fancybox calls defined in an script file in the head
+         * as example: if u use fancybox to open an login window and you would reopening it after an error occured
+         */
+        if(typeof fancyboxOnLoadCallback !== 'undefined' && $.isFunction(fancyboxOnLoadCallback)){
+            fancyboxOnLoadCallback();
+        }
+        
+    });
+  })(jQuery);
+</script>
