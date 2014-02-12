@@ -1,6 +1,6 @@
 
 {
-    "name": "mrtool/contao-jqueryFancybox",
+    "name": "mrtool/contao-jqueryfancybox",
     "description": "Jquery Fancybox for Contao 3.x",
     "keywords": ["jquery", "fancybox", "contao"],
     "type": "contao-module",
