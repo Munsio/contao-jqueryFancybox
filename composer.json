@@ -1,7 +1,6 @@
-
 {
     "name": "mrtool/contao-jqueryfancybox",
-    "description": "Jquery Fancybox for Contao 3.x",
+    "description": "Jquery Fancybox for Contao 3.1",
     "keywords": ["jquery", "fancybox", "contao"],
     "type": "contao-module",
     "homepage": "http://www.r2pi.de",
@@ -43,7 +42,7 @@
     "extra": {
         "contao": {
             "sources": {
-                "assets": "assets",
+                "assets/jquery/fancybox": "assets/jquery/fancybox",
                 "contao": "system/modules/jqueryFancybox"
             }
         }
