@@ -5,6 +5,9 @@ Adds jquery Fancybox to Contao 3.1
 
 This one is tested for Contao 3.1
 
+[![Latest Stable Version](https://poser.pugx.org/mrtool/contao-jquery-fancybox/v/stable.svg)](https://packagist.org/packages/mrtool/contao-jquery-fancybox)
+[![Total Downloads](https://poser.pugx.org/mrtool/contao-jquery-fancybox/downloads.svg)](https://packagist.org/packages/mrtool/contao-jquery-fancybox)
+
 
 additional callback
 -------------------
